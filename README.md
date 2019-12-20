@@ -1,2 +1,2 @@
 # H15R8x-Hardware
-Isolated Hi-precision Analog Output Module Hardware Design
+Voltage & Current Analog Output Module Hardware Design
