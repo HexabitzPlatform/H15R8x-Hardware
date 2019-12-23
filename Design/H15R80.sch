@@ -559,9 +559,8 @@
 <wire x1="-0.8128" y1="1.3716" x2="-0.7366" y2="1.4478" width="0.1524" layer="51" curve="-88"/>
 <wire x1="0.7874" y1="-1.397" x2="0.7112" y2="-1.4732" width="0.1524" layer="51" curve="-88"/>
 <wire x1="-0.7366" y1="-1.4732" x2="-0.8128" y2="-1.397" width="0.1524" layer="51" curve="-88"/>
-<wire x1="-0.9906" y1="1.5494" x2="0.3556" y2="1.5494" width="0.2032" layer="21"/>
-<text x="-3.2766" y="1.905" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
-<wire x1="0.3556" y1="1.5494" x2="0.9906" y2="1.5494" width="0.2032" layer="21"/>
+<wire x1="-0.9906" y1="1.5494" x2="0.9906" y2="1.5494" width="0.2032" layer="21"/>
+<text x="-3.2766" y="1.905" size="1.016" layer="25" rot="SR0">&gt;Name</text>
 <wire x1="1.4224" y1="0.7366" x2="1.4224" y2="1.143" width="0.1524" layer="51"/>
 <wire x1="0.7874" y1="0.7366" x2="0.7874" y2="1.143" width="0.1524" layer="51"/>
 <wire x1="1.4224" y1="-1.1684" x2="1.4224" y2="-0.762" width="0.1524" layer="51"/>
@@ -579,12 +578,7 @@
 <wire x1="-0.8128" y1="1.3716" x2="-0.7366" y2="1.4478" width="0.1524" layer="51" curve="-88"/>
 <wire x1="0.7874" y1="-1.397" x2="0.7112" y2="-1.4732" width="0.1524" layer="51" curve="-88"/>
 <wire x1="-0.7366" y1="-1.4732" x2="-0.8128" y2="-1.397" width="0.1524" layer="51" curve="-88"/>
-<text x="-0.889" y="0.9398" size="1.27" layer="51" ratio="6" rot="SR270">.Designator</text>
 <wire x1="-0.4064" y1="-1.5494" x2="0.381" y2="-1.5494" width="0.2032" layer="21"/>
-<wire x1="-1.6256" y1="1.5494" x2="-0.9906" y2="1.5494" width="0.2032" layer="21"/>
-<text x="-1.9558" y="2.2098" size="1.27" layer="21" ratio="6" rot="SR0">Designator9</text>
-<text x="-1.7272" y="-0.635" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
-<text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 </package>
 <package name="DBV0005A_M">
 <smd name="1" x="-1.475" y="0.95" dx="0.65" dy="1.2" layer="1" rot="R90"/>
@@ -12037,14 +12031,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="SUPPLY27" library="supply2" deviceset="AGND" device="" value="VSSA"/>
 <part name="SUPPLY28" library="supply2" deviceset="AGND" device="" value="VSSA"/>
 <part name="SUPPLY29" library="supply2" deviceset="AGND" device="" value="VSSA"/>
-<part name="R6" library="Hexabitz" deviceset="R-0603" device="" value="15.0K">
-<attribute name="MFN" value="Susumu"/>
-<attribute name="MPN" value="RG1608P-153-B-T5"/>
-<attribute name="OCTOPART_URL" value="https://octopart.com/rg1608p-153-b-t5-susumu-1191833?r=sp&amp;s=-o8BbZPwS5yNTzBtGupR8A"/>
-<attribute name="RESISTANCE" value="15.0 kOhm"/>
-<attribute name="TOLERANCE" value="0.1%"/>
-</part>
-<part name="SUPPLY30" library="supply2" deviceset="AGND" device="" value="VSSA"/>
 <part name="SUPPLY31" library="supply2" deviceset="AGND" device="" value="VSSA"/>
 <part name="C30" library="Hexabitz" deviceset="C-0603" device="" value="22nF">
 <attribute name="CAPACITANCE" value="22nF"/>
@@ -12100,7 +12086,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <plain>
 <text x="116.84" y="95.25" size="1.778" layer="95">VDDA Coupling</text>
 <text x="153.67" y="95.25" size="1.778" layer="95">VDDIO2 Coupling</text>
-<text x="195.58" y="95.25" size="1.778" layer="95">VDD Coupling</text>
+<text x="193.04" y="95.25" size="1.778" layer="95">VDD Coupling</text>
 <text x="229.87" y="95.25" size="1.778" layer="95">VBAT</text>
 <text x="0" y="-0.127" size="0.0508" layer="205" font="vector">C:/Users/Admin/Desktop/logodraft.bmp</text>
 <frame x1="0" y1="0" x2="279.4" y2="215.9" columns="8" rows="5" layer="91"/>
@@ -14544,7 +14530,7 @@ Voltage &amp; Current Analog Output</text>
 <attribute name="VALUE" x="123.825" y="93.345" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="SUPPLY8" gate="G$1" x="156.21" y="87.63" smashed="yes">
-<attribute name="VALUE" x="159.385" y="92.075" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="154.305" y="90.805" size="1.778" layer="96"/>
 </instance>
 <instance part="GND2" gate="1" x="156.21" y="69.85" smashed="yes">
 <attribute name="VALUE" x="153.67" y="67.31" size="1.778" layer="96"/>
@@ -14565,10 +14551,10 @@ Voltage &amp; Current Analog Output</text>
 <attribute name="VALUE" x="130.175" y="53.975" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY10" gate="G$1" x="190.5" y="87.63" smashed="yes">
-<attribute name="VALUE" x="193.675" y="92.075" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="188.595" y="90.805" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY13" gate="G$1" x="232.41" y="87.63" smashed="yes">
-<attribute name="VALUE" x="235.585" y="92.075" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="230.505" y="90.805" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY12" gate="G$1" x="203.2" y="109.22" smashed="yes" rot="R90">
 <attribute name="VALUE" x="210.947" y="109.855" size="1.778" layer="96" rot="R180"/>
@@ -23564,14 +23550,6 @@ Voltage &amp; Current Analog Output</text>
 <instance part="SUPPLY29" gate="G$1" x="95.25" y="144.78" smashed="yes" rot="R270">
 <attribute name="VALUE" x="93.345" y="142.113" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R6" gate="G$1" x="156.21" y="81.28" smashed="yes" rot="R180">
-<attribute name="NAME" x="151.13" y="82.7786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="151.13" y="77.978" size="1.778" layer="96"/>
-<attribute name="TOLERANCE" x="160.02" y="77.978" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY30" gate="G$1" x="167.64" y="76.2" smashed="yes">
-<attribute name="VALUE" x="170.307" y="74.295" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="SUPPLY31" gate="G$1" x="158.75" y="144.78" smashed="yes" rot="R90">
 <attribute name="VALUE" x="160.655" y="147.447" size="1.778" layer="96" rot="R270"/>
 </instance>
@@ -23767,12 +23745,6 @@ Voltage &amp; Current Analog Output</text>
 <segment>
 <pinref part="U2" gate="A" pin="DVDD-EN"/>
 <pinref part="SUPPLY29" gate="G$1" pin="AGND"/>
-</segment>
-<segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<pinref part="SUPPLY30" gate="G$1" pin="AGND"/>
-<wire x1="167.64" y1="78.74" x2="167.64" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="81.28" x2="161.29" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U2" gate="A" pin="-VSENSE"/>
@@ -24019,13 +23991,6 @@ Voltage &amp; Current Analog Output</text>
 <wire x1="177.8" y1="99.06" x2="148.59" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="U2" gate="A" pin="ISET-R"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="151.13" y1="81.28" x2="148.59" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$13" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="+VSENSE"/>
@@ -24051,6 +24016,53 @@ Voltage &amp; Current Analog Output</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,1,128.27,111.76,VCC,VDDA,,,,"/>
+<approved hash="102,1,120.65,85.09,VCC,VDDA,,,,"/>
+<approved hash="102,1,142.24,54.61,VCC,VDDA,,,,"/>
+<approved hash="102,1,200.66,109.22,AGND,VSSA,,,,"/>
+<approved hash="102,1,120.65,72.39,AGND,VSSA,,,,"/>
+<approved hash="102,1,193.04,54.61,AGND,VSSA,,,,"/>
+<approved hash="104,1,135.89,119.38,U1,VBAT,VDD,,,"/>
+<approved hash="104,1,135.89,116.84,U1,VDD_0,VDD,,,"/>
+<approved hash="104,1,135.89,114.3,U1,VDD_1,VDD,,,"/>
+<approved hash="104,1,135.89,109.22,U1,VDDIO2,VDD,,,"/>
+<approved hash="104,1,191.77,119.38,U1,EP,GND,,,"/>
+<approved hash="104,1,191.77,116.84,U1,VSS_0,GND,,,"/>
+<approved hash="104,1,191.77,114.3,U1,VSS_1,GND,,,"/>
+<approved hash="104,1,191.77,111.76,U1,VSS_2,GND,,,"/>
+<approved hash="104,1,191.77,109.22,U1,VSS_A,VSSA,,,"/>
+<approved hash="104,1,40.64,172.72,P1,VDD1,VDD,,,"/>
+<approved hash="104,1,40.64,167.64,P1,VDD2,VDD,,,"/>
+<approved hash="104,1,40.64,162.56,P1,VDD3,VDD,,,"/>
+<approved hash="104,1,40.64,157.48,P1,VDD4,VDD,,,"/>
+<approved hash="104,1,40.64,152.4,P1,VDD5,VDD,,,"/>
+<approved hash="104,1,40.64,147.32,P1,VDD6,VDD,,,"/>
+<approved hash="104,1,40.64,137.16,P1,GND1,GND,,,"/>
+<approved hash="104,1,40.64,132.08,P1,GND2,GND,,,"/>
+<approved hash="104,1,40.64,127,P1,GND3,GND,,,"/>
+<approved hash="104,1,40.64,121.92,P1,GND4,GND,,,"/>
+<approved hash="104,1,40.64,116.84,P1,GND5,GND,,,"/>
+<approved hash="104,1,40.64,111.76,P1,GND6,GND,,,"/>
+<approved hash="104,2,97.79,60.96,U2,GND_2,AGND,,,"/>
+<approved hash="104,2,148.59,68.58,U2,GND_3,AGND,,,"/>
+<approved hash="104,2,148.59,71.12,U2,GND_4,AGND,,,"/>
+<approved hash="104,2,148.59,63.5,U2,AVSS_2,-15V,,,"/>
+<approved hash="104,2,148.59,73.66,U2,GND,AGND,,,"/>
+<approved hash="104,2,148.59,152.4,U2,AVDD,+15V,,,"/>
+<approved hash="104,2,148.59,60.96,U2,AVSS,-15V,,,"/>
+<approved hash="104,2,97.79,152.4,U2,DVDD,VDD,,,"/>
+<approved hash="104,2,148.59,58.42,U2,PAD,-15V,,,"/>
+<approved hash="104,2,189.23,144.78,U3,V-,-15V,,,"/>
+<approved hash="104,2,189.23,165.1,U3,V+,+15V,,,"/>
+<approved hash="206,2,148.59,134.62,N$1,,,,,"/>
+<approved hash="206,2,148.59,109.22,N$1,,,,,"/>
+<approved hash="106,1,135.89,175.26,UART4_RX,,,,,"/>
+<approved hash="106,1,135.89,177.8,UART4_TX,,,,,"/>
+<approved hash="106,1,135.89,165.1,UART6_RX,,,,,"/>
+<approved hash="106,1,135.89,167.64,UART6_TX,,,,,"/>
+<approved hash="111,1,198.12,132.08,N$6,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
