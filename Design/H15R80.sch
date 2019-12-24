@@ -11937,7 +11937,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <attribute name="TOLERANCE" value="10%"/>
 <attribute name="VOLTAGE_RATING" value="10V"/>
 </part>
-<part name="SUPPLY20" library="supply2" deviceset="VDD" device=""/>
 <part name="R5" library="Hexabitz" deviceset="R-0603" device="" value="10.0K">
 <attribute name="MFN" value="Yageo"/>
 <attribute name="MPN" value="RC0603JR-0710KL"/>
@@ -12080,6 +12079,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </part>
 <part name="SUPPLY34" library="supply2" deviceset="AGND" device="" value="VSSA"/>
 <part name="P-6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-15V" device=""/>
+<part name="SUPPLY14" library="supply2" deviceset="VCC" device="" value="VDDA"/>
 </parts>
 <sheets>
 <sheet>
@@ -23450,9 +23450,6 @@ Voltage &amp; Current Analog Output</text>
 <attribute name="NAME" x="70.104" y="146.431" size="1.778" layer="95"/>
 <attribute name="VALUE" x="70.104" y="141.351" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY20" gate="G$1" x="68.58" y="157.48" smashed="yes">
-<attribute name="VALUE" x="70.485" y="161.925" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="R5" gate="G$1" x="81.28" y="144.78" smashed="yes" rot="R90">
 <attribute name="NAME" x="86.36" y="147.0914" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="88.9" y="143.002" size="1.778" layer="96" rot="R180"/>
@@ -23603,6 +23600,9 @@ Voltage &amp; Current Analog Output</text>
 <instance part="P-6" gate="1" x="250.19" y="172.72" smashed="yes" rot="R180">
 <attribute name="VALUE" x="246.38" y="176.53" size="1.778" layer="96"/>
 </instance>
+<instance part="SUPPLY14" gate="G$1" x="68.58" y="157.48" smashed="yes">
+<attribute name="VALUE" x="71.755" y="163.195" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -23631,7 +23631,7 @@ Voltage &amp; Current Analog Output</text>
 <wire x1="205.74" y1="152.4" x2="205.74" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="AGND" class="0">
+<net name="VSSA" class="0">
 <segment>
 <pinref part="PWR" gate="-2" pin="K"/>
 <pinref part="SUPPLY15" gate="G$1" pin="AGND"/>
@@ -23904,21 +23904,6 @@ Voltage &amp; Current Analog Output</text>
 <pinref part="P-6" gate="1" pin="-15V"/>
 </segment>
 </net>
-<net name="VDD" class="0">
-<segment>
-<pinref part="SUPPLY20" gate="G$1" pin="VDD"/>
-<pinref part="C18" gate="G$1" pin="1"/>
-<wire x1="68.58" y1="154.94" x2="68.58" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="U2" gate="A" pin="DVDD"/>
-<wire x1="68.58" y1="152.4" x2="68.58" y2="148.59" width="0.1524" layer="91"/>
-<wire x1="97.79" y1="152.4" x2="81.28" y2="152.4" width="0.1524" layer="91"/>
-<junction x="68.58" y="152.4"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="81.28" y1="152.4" x2="68.58" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="149.86" x2="81.28" y2="152.4" width="0.1524" layer="91"/>
-<junction x="81.28" y="152.4"/>
-</segment>
-</net>
 <net name="AO_ALARM" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="ALARM_N"/>
@@ -24011,6 +23996,21 @@ Voltage &amp; Current Analog Output</text>
 <pinref part="U2" gate="A" pin="HART-IN"/>
 <pinref part="C30" gate="G$1" pin="1"/>
 <wire x1="154.94" y1="104.14" x2="148.59" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VDDA" class="0">
+<segment>
+<pinref part="C18" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="154.94" x2="68.58" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="DVDD"/>
+<wire x1="68.58" y1="152.4" x2="68.58" y2="148.59" width="0.1524" layer="91"/>
+<wire x1="97.79" y1="152.4" x2="81.28" y2="152.4" width="0.1524" layer="91"/>
+<junction x="68.58" y="152.4"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="152.4" x2="68.58" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="149.86" x2="81.28" y2="152.4" width="0.1524" layer="91"/>
+<junction x="81.28" y="152.4"/>
+<pinref part="SUPPLY14" gate="G$1" pin="VCC"/>
 </segment>
 </net>
 </nets>
