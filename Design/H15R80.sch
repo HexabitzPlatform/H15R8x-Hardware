@@ -355,7 +355,6 @@
 <smd name="39" x="-1.75" y="2.900003125" dx="0.25" dy="0.6" layer="1"/>
 <smd name="40" x="-2.249996875" y="2.900003125" dx="0.25" dy="0.6" layer="1"/>
 <smd name="41" x="0" y="0.000003125" dx="4.6" dy="4.6" layer="1" cream="no"/>
-<smd name="V" x="2.05" y="0" dx="0.5" dy="0.5" layer="1" roundness="100"/>
 <wire x1="-3.175" y1="-3.175" x2="-2.9718" y2="-3.175" width="0.2032" layer="21"/>
 <wire x1="-3.175" y1="-3.175" x2="-3.175" y2="-2.9718" width="0.2032" layer="21"/>
 <wire x1="2.9718" y1="-3.175" x2="3.175" y2="-3.175" width="0.2032" layer="21"/>
@@ -1267,7 +1266,7 @@ Octopart Url : https://octopart.com/cstce8m00g52-r0-murata-7145559</description>
 <attribute name="PARTNUMBER" value="DAC7760IRHAR" constant="no"/>
 <attribute name="REFDES" value="RefDes" constant="no"/>
 <attribute name="TYPE" value="TYPE" constant="no"/>
-<attribute name="VALUE" value="Value" constant="no"/>
+<attribute name="VALUE" value="DAC8760RHA" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -11862,7 +11861,7 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <attribute name="MPN" value="1751251"/>
 <attribute name="OCTOPART_URL" value="https://octopart.com/1751251-phoenix+contact-36473?r=sp&amp;s=9M0VWNoHTyq04j3qI6lQOQ "/>
 </part>
-<part name="U2" library="Hexabitz" deviceset="DAC7760IRHAR" device="" value="DAC8760IRHAR"/>
+<part name="U2" library="Hexabitz" deviceset="DAC7760IRHAR" device="" value="DAC8760RHA"/>
 <part name="SUPPLY15" library="supply2" deviceset="AGND" device="" value="VSSA"/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+15V" device=""/>
 <part name="P-1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-15V" device=""/>
@@ -12080,6 +12079,10 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="SUPPLY34" library="supply2" deviceset="AGND" device="" value="VSSA"/>
 <part name="P-6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-15V" device=""/>
 <part name="SUPPLY14" library="supply2" deviceset="VCC" device="" value="VDDA"/>
+<part name="GND9" library="supply1" deviceset="GND" device=""/>
+<part name="GND10" library="supply1" deviceset="GND" device=""/>
+<part name="GND11" library="supply1" deviceset="GND" device=""/>
+<part name="GND12" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14591,6 +14594,18 @@ Voltage &amp; Current Analog Output</text>
 <instance part="SUPPLY2" gate="GND" x="45.72" y="101.6" smashed="yes">
 <attribute name="VALUE" x="43.815" y="98.425" size="1.778" layer="96"/>
 </instance>
+<instance part="GND9" gate="1" x="120.65" y="162.56" smashed="yes" rot="R270">
+<attribute name="VALUE" x="118.11" y="165.1" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="GND10" gate="1" x="198.12" y="177.8" smashed="yes" rot="R90">
+<attribute name="VALUE" x="200.66" y="175.26" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND11" gate="1" x="129.54" y="132.08" smashed="yes" rot="R270">
+<attribute name="VALUE" x="127" y="134.62" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="GND12" gate="1" x="198.12" y="162.56" smashed="yes" rot="R90">
+<attribute name="VALUE" x="200.66" y="160.02" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -14763,6 +14778,60 @@ Voltage &amp; Current Analog Output</text>
 <pinref part="P1" gate="G$1" pin="GND6"/>
 <wire x1="40.64" y1="111.76" x2="45.72" y2="111.76" width="0.1524" layer="91"/>
 <junction x="45.72" y="111.76"/>
+</segment>
+<segment>
+<pinref part="GND9" gate="1" pin="GND"/>
+<pinref part="U1" gate="G$1" pin="PA6"/>
+<wire x1="123.19" y1="162.56" x2="134.62" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="PA7"/>
+<wire x1="134.62" y1="162.56" x2="135.89" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="135.89" y1="160.02" x2="134.62" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="160.02" x2="134.62" y2="162.56" width="0.1524" layer="91"/>
+<junction x="134.62" y="162.56"/>
+</segment>
+<segment>
+<pinref part="GND10" gate="1" pin="GND"/>
+<pinref part="U1" gate="G$1" pin="PB0"/>
+<wire x1="195.58" y1="177.8" x2="193.04" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="PB2"/>
+<wire x1="193.04" y1="177.8" x2="191.77" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="191.77" y1="172.72" x2="193.04" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="172.72" x2="193.04" y2="175.26" width="0.1524" layer="91"/>
+<junction x="193.04" y="177.8"/>
+<pinref part="U1" gate="G$1" pin="PB1"/>
+<wire x1="193.04" y1="175.26" x2="193.04" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="191.77" y1="175.26" x2="193.04" y2="175.26" width="0.1524" layer="91"/>
+<junction x="193.04" y="175.26"/>
+</segment>
+<segment>
+<pinref part="GND11" gate="1" pin="GND"/>
+<pinref part="U1" gate="G$1" pin="PC15-OSC32_OUT"/>
+<wire x1="132.08" y1="132.08" x2="134.62" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="PC13"/>
+<wire x1="134.62" y1="132.08" x2="135.89" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="135.89" y1="134.62" x2="134.62" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="134.62" x2="134.62" y2="132.08" width="0.1524" layer="91"/>
+<junction x="134.62" y="132.08"/>
+<pinref part="U1" gate="G$1" pin="PC14-OSC32_IN"/>
+<wire x1="135.89" y1="129.54" x2="134.62" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="129.54" x2="134.62" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="PA15"/>
+<wire x1="135.89" y1="139.7" x2="134.62" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="139.7" x2="134.62" y2="134.62" width="0.1524" layer="91"/>
+<junction x="134.62" y="134.62"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PB7"/>
+<wire x1="191.77" y1="160.02" x2="193.04" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="160.02" x2="193.04" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="PB5"/>
+<wire x1="193.04" y1="162.56" x2="193.04" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="165.1" x2="191.77" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="PB6"/>
+<wire x1="191.77" y1="162.56" x2="193.04" y2="162.56" width="0.1524" layer="91"/>
+<junction x="193.04" y="162.56"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="195.58" y1="162.56" x2="193.04" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="UART5_TX" class="0">
@@ -24044,14 +24113,9 @@ Voltage &amp; Current Analog Output</text>
 <approved hash="104,1,40.64,121.92,P1,GND4,GND,,,"/>
 <approved hash="104,1,40.64,116.84,P1,GND5,GND,,,"/>
 <approved hash="104,1,40.64,111.76,P1,GND6,GND,,,"/>
-<approved hash="104,2,97.79,60.96,U2,GND_2,AGND,,,"/>
-<approved hash="104,2,148.59,68.58,U2,GND_3,AGND,,,"/>
-<approved hash="104,2,148.59,71.12,U2,GND_4,AGND,,,"/>
 <approved hash="104,2,148.59,63.5,U2,AVSS_2,-15V,,,"/>
-<approved hash="104,2,148.59,73.66,U2,GND,AGND,,,"/>
 <approved hash="104,2,148.59,152.4,U2,AVDD,+15V,,,"/>
 <approved hash="104,2,148.59,60.96,U2,AVSS,-15V,,,"/>
-<approved hash="104,2,97.79,152.4,U2,DVDD,VDD,,,"/>
 <approved hash="104,2,148.59,58.42,U2,PAD,-15V,,,"/>
 <approved hash="104,2,189.23,144.78,U3,V-,-15V,,,"/>
 <approved hash="104,2,189.23,165.1,U3,V+,+15V,,,"/>
