@@ -3049,8 +3049,11 @@ design rules under a new name.</description>
 <attribute name="APPLICATION_BUILDNUMBER" value="*" x="38.862" y="40.386" size="1.778" layer="27" display="off"/>
 <attribute name="COMPTYPE" value="IC" x="38.862" y="40.386" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER" value="Texas Instruments" x="38.862" y="40.386" size="1.778" layer="27" display="off"/>
+<attribute name="MFN" value="Texas Instruments" x="38.862" y="40.386" size="1.778" layer="27" display="off"/>
 <attribute name="MOUNTTYPE" value="SMT" x="38.862" y="40.386" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="OPA192IDBVR" x="38.862" y="40.386" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="39.3954" y="42.418" size="1.016" layer="25" rot="SR0"/>
+<attribute name="OCTOPART_URL" value="https://octopart.com/opa192idbvr-texas+instruments-33513820?r=sp&amp;s=D6KF1OAATrGkqNyouFfzCw" x="38.862" y="40.386" size="1.778" layer="27" display="off"/>
 <attribute name="PACKAGEREFERENCE" value="DBV0005A" x="38.862" y="40.386" size="1.778" layer="27" display="off"/>
 <attribute name="PARTNUMBER" value="OPA192IDBVR" x="38.862" y="40.386" size="1.778" layer="27" display="off"/>
 <attribute name="PIN_COUNT" value="5" x="38.862" y="40.386" size="1.778" layer="27" display="off"/>

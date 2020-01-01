@@ -12039,7 +12039,11 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <attribute name="VOLTAGE_RATING" value="50V"/>
 </part>
 <part name="SUPPLY32" library="supply2" deviceset="AGND" device="" value="VSSA"/>
-<part name="U3" library="Hexabitz" deviceset="OPA192IDBVR" device="" value="OPA192"/>
+<part name="U3" library="Hexabitz" deviceset="OPA192IDBVR" device="" value="OPA192">
+<attribute name="MFN" value="Texas Instruments"/>
+<attribute name="MPN" value="OPA192IDBVR"/>
+<attribute name="OCTOPART_URL" value="https://octopart.com/opa192idbvr-texas+instruments-33513820?r=sp&amp;s=D6KF1OAATrGkqNyouFfzCw"/>
+</part>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+15V" device=""/>
 <part name="P-5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-15V" device=""/>
 <part name="C31" library="Hexabitz" deviceset="C-0603" device="" value="100nF">
@@ -23630,6 +23634,9 @@ Voltage &amp; Current Analog Output</text>
 <instance part="U3" gate="A" x="194.31" y="160.02" smashed="yes" rot="MR0">
 <attribute name="NAME" x="191.77" y="166.37" size="2.0828" layer="95" rot="SMR180"/>
 <attribute name="VALUE" x="191.77" y="163.83" size="2.0828" layer="96" rot="SMR180"/>
+<attribute name="MFN" x="194.31" y="160.02" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="MPN" x="194.31" y="160.02" size="1.778" layer="96" rot="MR0" display="off"/>
+<attribute name="OCTOPART_URL" x="194.31" y="160.02" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
 <instance part="P+6" gate="1" x="189.23" y="167.64" smashed="yes">
 <attribute name="VALUE" x="186.69" y="168.91" size="1.778" layer="96" rot="R180"/>
