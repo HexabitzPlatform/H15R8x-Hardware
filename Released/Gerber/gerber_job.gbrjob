@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2020-01-01T11:12:43Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.3.0"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.6,
+        "LayerNumber": 4,
+        "Name": {
+            "ProjectId": "H15R80"
+        },
+        "Owner": "Asaad Kaadan <asaad@hexabitz.com>",
+        "Size": {
+            "X": 34.64,
+            "Y": 30
+        }
+    }
+}
