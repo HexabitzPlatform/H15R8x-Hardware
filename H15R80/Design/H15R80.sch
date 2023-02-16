@@ -16149,6 +16149,7 @@ Voltage &amp; Current Analog Output</text>
 <text x="242.6462" y="6.1722" size="1.9304" layer="100" font="vector">www.hexabitz.com</text>
 <text x="247.015" y="147.32" size="1.778" layer="95">BOOT</text>
 <text x="182.8292" y="5.0292" size="1.9304" layer="101" font="vector">Obada Albasha</text>
+<text x="43.815" y="191.135" size="1.778" layer="102">VDD = 3.3 Volts</text>
 </plain>
 <instances>
 <instance part="C8" gate="G$1" x="118.745" y="139.7" smashed="yes">
